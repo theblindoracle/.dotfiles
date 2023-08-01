@@ -1,0 +1,23 @@
+#!/usr/bin/env zsh
+
+if [[ -z $STOW_DIR ]]; then
+  STOW_DIR="tmux,nvim,zsh"
+fi
+
+if [[ -z $DOTFILES ]]; then
+  DOTFILES="$HOME/.dotfiles"
+fi
+
+STOW_DIR=$STOW_DIR
+DOTFILES=$DOTFILES
+
+pushd $DOTFILES
+
+for folder in $(echo $STOW_DIR | sed "s/,/ /g")
+do
+  echo "stow $folder" 
+  stow -D $folder
+  stow $folder
+done
+
+popd
