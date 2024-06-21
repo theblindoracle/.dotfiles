@@ -2,7 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/flutter/bin:$PATH
 export PATH=$HOME/.local/scripts:$PATH
-
+export PATH=$HOME/go/bin:$PATH
+export PATH=$HOME/.dotnet/tools:$PATH
+  
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
