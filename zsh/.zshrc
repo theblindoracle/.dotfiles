@@ -4,7 +4,10 @@ export PATH=$HOME/flutter/bin:$PATH
 export PATH=$HOME/.local/scripts:$PATH
 export PATH=$HOME/go/bin:$PATH
 export PATH=$HOME/.dotnet/tools:$PATH
-  
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
