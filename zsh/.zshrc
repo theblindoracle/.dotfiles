@@ -109,3 +109,5 @@ source $ZSH/oh-my-zsh.sh
 alias lg="lazygit"
 alias vim="nvim"
 alias vi="nvim"
+
+neofetch
