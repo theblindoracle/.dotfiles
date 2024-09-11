@@ -103,6 +103,8 @@
 # ]
 #
 
+alt - z : yabai -m window --toggle zoom-parent
+
 alt - h : yabai -m window --focus west
 alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
