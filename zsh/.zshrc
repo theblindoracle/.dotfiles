@@ -6,7 +6,8 @@ export PATH=$HOME/go/bin:$PATH
 export PATH=$HOME/.dotnet/tools:$PATH
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -109,5 +110,4 @@ source $ZSH/oh-my-zsh.sh
 alias lg="lazygit"
 alias vim="nvim"
 alias vi="nvim"
-
-neofetch
+alias dn="dotnet"
