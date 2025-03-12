@@ -169,6 +169,7 @@ return {
         -- tsserver = {},
         --
 
+        tailwindcss = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
