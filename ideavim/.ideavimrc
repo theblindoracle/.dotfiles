@@ -1,0 +1,24 @@
+let mapleader = " "
+
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-commentary'
+Plug 'machakann/vim-highlightedyank'
+
+set rnu
+set scrolloff=8
+
+
+map <leader>gr <Action>(FindUsages) 
+map <leader>fr <Action>(FindUsages)
+map <leader>sf <Action>(GotoFile)
+map <leader>sw <Action>(TextSearchAction)
+
+map <leader>ca <Action>(ShowIntentionActions)
+
+map <leader>e <Action>(ShowErrorDescription)
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
+
+map <leader>rd <Action>(Debug)
+
+map <leader>x <Action>(IdeaVim.ReloadVimRc.reload)
