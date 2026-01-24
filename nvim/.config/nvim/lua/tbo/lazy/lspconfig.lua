@@ -169,6 +169,7 @@ return {
         -- tsserver = {},
         --
 
+        sqlls = {},
         tailwindcss = {},
         lua_ls = {
           -- cmd = {...},
