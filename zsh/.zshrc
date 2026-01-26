@@ -4,6 +4,7 @@ export PATH=$HOME/flutter/bin:$PATH
 export PATH=$HOME/.local/scripts:$PATH
 export PATH=$HOME/go/bin:$PATH
 export PATH=$HOME/.dotnet/tools:$PATH
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
@@ -113,20 +114,10 @@ source $ZSH/oh-my-zsh.sh
 alias lg="lazygit"
 alias vim="nvim"
 alias vi="nvim"
+alias dn="dotnet"
 
 source <(fzf --zsh)
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
-eval "$(zoxide init --cmd=cd zsh)"
-
-if [[ -z "${CLAUDECODE}" ]]; then
-  eval "$(zoxide init --cmd cd zsh)"
-fi
-
-# Generated for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/travisnapier/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/travisnapier/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/travisnapier/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/travisnapier/google-cloud-sdk/completion.zsh.inc'; fi
+eval "$(zoxide init zsh --cmd cd)"
+export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
