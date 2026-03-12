@@ -183,3 +183,33 @@ automatically-unhide-macos-hidden-apps = false
 8 = 2
 9 = 2
 10 = 2
+
+[[on-window-detected]]
+    if.app-id = 'com.tinyspeck.slackmacgap'
+    if.during-aerospace-startup = true
+    run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+    if.app-id = 'net.kovidgoyal.kitty '
+    if.during-aerospace-startup = true
+    run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.finder'
+    if.during-aerospace-startup = true
+    run = 'move-node-to-workspace 5'
+
+[[on-window-detected]]
+    if.app-id = 'com.tinyspeck.slackmacgap'
+    if.during-aerospace-startup = true
+    run = 'move-node-to-workspace 6'
+
+[[on-window-detected]]
+    if.app-id = 'md.obsidian'
+    if.during-aerospace-startup = true
+    run = 'move-node-to-workspace 9'
+
+[[on-window-detected]]
+    if.app-id = 'com.spotify.client'
+    if.during-aerospace-startup = true
+    run = 'move-node-to-workspace 10'
