@@ -183,3 +183,31 @@ automatically-unhide-macos-hidden-apps = false
 8 = 2
 9 = 2
 10 = 2
+
+[[on-window-detected]]
+    if.app-id = 'app.zen-browser.zen'
+    run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+    if.app-id = 'net.kovidgoyal.kitty'
+    run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.finder'
+    run = 'move-node-to-workspace 5'
+
+[[on-window-detected]]
+    if.app-id = 'com.hnc.Discord'
+    run = 'move-node-to-workspace 6'
+
+[[on-window-detected]]
+    if.app-id = 'md.obsidian'
+    run = 'move-node-to-workspace 9'
+
+[[on-window-detected]]
+    if.app-id = 'com.spotify.client'
+    run = 'move-node-to-workspace 10'
+
+[[on-window-detected]]
+    if.app-id = 'com.apple.Safari.WebApp.6BC6806F-2995-422C-B790-558EC1C67970'
+    run = 'move-node-to-workspace 10'
