@@ -1,14 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/flutter/bin:$PATH
 export PATH=$HOME/.local/scripts:$PATH
-export PATH=$HOME/go/bin:$PATH
-export PATH=$HOME/.dotnet/tools:$PATH
 
-export JAVA_HOME=$(/usr/libexec/java_home)
 
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
 
 export EDITOR=nvim
 
@@ -115,18 +109,6 @@ alias vim="nvim"
 alias vi="nvim"
 
 source <(fzf --zsh)
-
-eval "$(zoxide init --cmd=cd zsh)"
-
-if [[ -z "${CLAUDECODE}" ]]; then
-  eval "$(zoxide init --cmd cd zsh)"
-fi
-
-# Generated for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/travisnapier/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/travisnapier/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/travisnapier/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/travisnapier/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/opt/homebrew/opt/dotnet@8/bin:$PATH"
+export PATH=$PATH:$(go env GOPATH)/bin
+export PATH="$HOME/.local/bin:$PATH"
