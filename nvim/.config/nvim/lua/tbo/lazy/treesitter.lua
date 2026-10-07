@@ -20,7 +20,7 @@ return { -- Highlight, edit, and navigate code
     -- Prefer git instead of curl in order to improve connectivity in some environments
     require('nvim-treesitter.install').prefer_git = true
     ---@diagnostic disable-next-line: missing-fields
-    require('nvim-treesitter.configs').setup(opts)
+    require('nvim-treesitter.config').setup(opts)
 
     -- There are additional nvim-treesitter modules that you can use to interact
     -- with nvim-treesitter. You should go explore a few and see what interests you:
@@ -29,16 +29,5 @@ return { -- Highlight, edit, and navigate code
     --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     --
-
-    local treesitter_parser_config = require('nvim-treesitter.parsers').get_parser_configs()
-    treesitter_parser_config.templ = {
-      install_info = {
-        url = 'https://github.com/vrischmann/tree-sitter-templ.git',
-        files = { 'src/parser.c', 'src/scanner.c' },
-        branch = 'master',
-      },
-    }
-
-    vim.treesitter.language.register('templ', 'templ')
   end,
 }
