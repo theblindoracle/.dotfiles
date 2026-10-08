@@ -112,3 +112,6 @@ source <(fzf --zsh)
 export PATH="/opt/homebrew/opt/dotnet@8/bin:$PATH"
 export PATH=$PATH:$(go env GOPATH)/bin
 export PATH="$HOME/.local/bin:$PATH"
+
+# Token for the Claude Code GitHub MCP plugin, reused from the gh CLI login
+export GITHUB_PERSONAL_ACCESS_TOKEN="$(gh auth token)"
